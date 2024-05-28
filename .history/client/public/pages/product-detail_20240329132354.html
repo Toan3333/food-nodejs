@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Alice:regular" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-main">
+            <div class="header-logo">
+              <img src="../images/Logo.svg" alt="" />
+            </div>
+            <div class="header-menu">
+              <ul class="header-nav">
+                <li class="header-list">
+                  <a href="/index.html" class="header-link active">Home</a>
+                </li>
+                <li class="header-list">
+                  <a href="../pages/menu.html" class="header-link">Menu</a>
+                </li>
+                <li class="header-list">
+                  <a href="../pages/blog.html" class="header-link">Blog</a>
+                </li>
+                <li class="header-list">
+                  <a href="../pages/about.html" class="header-link">About us</a>
+                </li>
+                <li class="header-list">
+                  <a href="../pages/contact.html" class="header-link">Contact</a>
+                </li>
+
+                <div class="header-list__mobile">
+                  <li class="header-list btn-menu">
+                    <a href="../pages/login.html" class="header-link">Login</a>
+                  </li>
+                  <li class="header-list btn-menu">
+                    <a href="../pages/register.html" class="header-link">Register</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="header-auth">
+              <div class="header-icon">
+                <a href="../pages/login.html">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <a href="../pages/cart.html">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="header__bar">
+              <i class="fa fa-bars header__bar-icon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+      <!-- PRODUCT DETAIL -->
+      <section class="product-detail">
+        <div class="container">
+          <div class="product-detail__main">
+            <div class="product-detail__image">
+              <img src="../images/special-1.png" alt="" />
+            </div>
+            <div class="product-detail__content">
+              <div class="product-detail__heading">Best seller</div>
+              <h3 class="product-detail__title">name</h3>
+              <div class="product-detail__price">$ 10</div>
+              <div class="product-detail__review">
+                <div class="product-detail__list">
+                  <div class="product-detail__rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <div class="product-detail__view">214 Reviews</div>
+                </div>
+                <div class="product-detail__viewall">View all</div>
+              </div>
+              <div class="product-detail__text">Description:</div>
+              <p class="product-detail__desc">
+                Yangnyeom chicken (Korean: 양념치킨) is a variety of Korean fried chicken seasoned
+                with a sweet and spicy sauce of gochujang, garlic, sugar, and other spices. It is
+                often eaten as anju, food consumed while drinking, in South Korea.
+              </p>
+              <div class="product-detail__container">
+                <div class="product-detail__quantity">
+                  <input type="text" value="1" min="1" max="10" />
+                  <div class="product-detail__item">
+                    <i class="fa fa-minus" aria-hidden="true"></i>
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                  </div>
+                </div>
+                <div class="product-detail__btn">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="food">
+        <div class="container">
+          <div class="text-center__primary special-center">
+            New <span class="text-primary">Foods</span>
+            <p class="text-bottom">
+              Best cooks and best delivery guys all at your service. Hot tasty food will reach you
+              in 60 minutes.
+            </p>
+          </div>
+          <div class="food-list">
+            <!-- <div class="food-item">
+              <div class="food-image">
+                <img src="../images/food-1.jpeg" alt="" />
+              </div>
+              <div class="food-body">
+                <div class="food-name">Seafood</div>
+                <div class="food-price">$156.00</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="../images/food-2.jpeg" alt="" />
+              </div>
+              <div class="food-body">
+                <div class="food-name">Vegetable Soup</div>
+                <div class="food-price">$156.00</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="../images/food-3.jpeg" alt="" />
+              </div>
+              <div class="food-body">
+                <div class="food-name">Pumpkin Soup</div>
+                <div class="food-price">$156.00</div>
+              </div>
+            </div>
+            <div class="food-item">
+              <div class="food-image">
+                <img src="../images/food-4.jpeg" alt="" />
+              </div>
+              <div class="food-body">
+                <div class="food-name">Italian spaghetti</div>
+                <div class="food-price">$156.00</div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-list">
+            <div class="footer-column">
+              <div class="footer-center">
+                <div class="footer-logo">
+                  <img src="../images/Logo.svg" alt="" />
+                </div>
+                <p class="footer-desc">
+                  Explore your Taste with speacial food in the special place, that will make you
+                  happy. I try to write some thing without lorem isum. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">Support</h3>
+              <ul class="footer-menu">
+                <li class="footer-item"><a href="#">Help Centre</a></li>
+                <li class="footer-item"><a href="#">Safety information</a></li>
+                <li class="footer-item">
+                  <a href="#">Cancellation options</a>
+                </li>
+                <li class="footer-item"><a href="#">Report Complaint</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">Community</h3>
+              <ul class="footer-menu">
+                <li class="footer-item"><a href="#">Customer Review</a></li>
+                <li class="footer-item"><a href="#">Newsletter</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">About</h3>
+              <ul class="footer-menu">
+                <li class="footer-item"><a href="#">Our Chef</a></li>
+                <li class="footer-item"><a href="#">Careers</a></li>
+                <li class="footer-item">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="footer-item"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="..//productDetail.js'"></script>
+  </body>
+</html>

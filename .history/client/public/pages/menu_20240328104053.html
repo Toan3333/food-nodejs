@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Alice:regular" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-main">
+            <div class="header-logo">
+              <img src="../images/Logo.svg" alt="" />
+            </div>
+            <div class="header-menu">
+              <ul class="header-nav">
+                <li class="header-list">
+                  <a href="/index.html" class="header-link active">Home</a>
+                </li>
+                <li class="header-list">
+                  <a href="../pages/menu.html" class="header-link">Menu</a>
+                </li>
+                <li class="header-list">
+                  <a href="../pages/blog.html" class="header-link">Blog</a>
+                </li>
+                <li class="header-list">
+                  <a href="../pages/about.html" class="header-link">About us</a>
+                </li>
+                <li class="header-list">
+                  <a href="../pages/contact.html" class="header-link">Contact</a>
+                </li>
+
+                <div class="header-list__mobile">
+                  <li class="header-list btn-menu">
+                    <a href="../pages/login.html" class="header-link">Login</a>
+                  </li>
+                  <li class="header-list btn-menu">
+                    <a href="../pages/register.html" class="header-link">Register</a>
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <div class="header-auth">
+              <div class="header-icon">
+                <a href="../pages/login.html">
+                  <i class="fa fa-user" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <a href="../pages/cart.html">
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+            <div class="header__bar">
+              <i class="fa fa-bars header__bar-icon" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- header end -->
+      <section class="menu">
+        <div class="container">
+          <div class="text-center__primary special-center menu-center">
+            Get <span class="text-primary">special</span> Meal
+            <p class="text-bottom">
+              Best cooks and best delivery guys all at your service. Hot tasty food will reach you
+              in 60 minutes.
+            </p>
+          </div>
+          <ul class="tab">
+            <li class="tab-item active" onclick="changeProductList('korean-food', this)">
+              <img src="../images/bbq.png" alt="" /> korean Food
+            </li>
+            <li class="tab-item" onclick="changeProductList('fast-food', this)">
+              <img src="../images/pizza.png" alt="" /> Fast Food
+            </li>
+            <li class="tab-item" onclick="changeProductList('thailand-food', this)">
+              <img src="../images/hotpot.png" alt="" /> ThaiLand food
+            </li>
+          </ul>
+          <div id="korean-food" class="special-list menu-items">
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-1.png" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Futomaki</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$12.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-2.png" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Korea BBQ</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$21.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-3.png" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Kimchi</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$6.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-4.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Tori Tori Meatball</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$12.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-5.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Breakfast Package</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$21.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-4.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Sausage Barbeque</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$6.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="fast-food" class="special-list menu-items">
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-6.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Futomaki</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$12.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-7.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Cheese And Corn Pizza</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$21.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-8.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Kimchi</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$6.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-9.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Tori Tori Meatball</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$12.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-10.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Breakfast Package</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$21.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-11.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Sausage Barbeque</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$6.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="thailand-food" class="special-list menu-items">
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-12.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Guay Teow</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$12.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-13.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Tom Yum Goong</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$21.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/special-14.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Som Tam</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$6.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/food-1.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Pad Thai</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$12.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/food-2.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Khao Pad</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$21.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="special-item">
+              <div class="special-image">
+                <img src="../images/food-3.jpeg" alt="" />
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <i class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="special-title">Pad Krapow</div>
+              <div class="special-rating">
+                <div class="special-icon">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div class="special-views">214 Reviews</div>
+              </div>
+              <div class="special-bottom">
+                <div class="special-price">$6.99</div>
+                <div class="special-button">
+                  <button class="button-primary">ORDER NOW</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <div class="pagination">
+        <div class="container">
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a href="#" class="pagination-link active">1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">3</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">4</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#" class="pagination-link">5</a>
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-list">
+            <div class="footer-column">
+              <div class="footer-center">
+                <div class="footer-logo">
+                  <img src="../images/Logo.svg" alt="" />
+                </div>
+                <p class="footer-desc">
+                  Explore your Taste with speacial food in the special place, that will make you
+                  happy. I try to write some thing without lorem isum. Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">Support</h3>
+              <ul class="footer-menu">
+                <li class="footer-item"><a href="#">Help Centre</a></li>
+                <li class="footer-item"><a href="#">Safety information</a></li>
+                <li class="footer-item">
+                  <a href="#">Cancellation options</a>
+                </li>
+                <li class="footer-item"><a href="#">Report Complaint</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">Community</h3>
+              <ul class="footer-menu">
+                <li class="footer-item"><a href="#">Customer Review</a></li>
+                <li class="footer-item"><a href="#">Newsletter</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">About</h3>
+              <ul class="footer-menu">
+                <li class="footer-item"><a href="#">Our Chef</a></li>
+                <li class="footer-item"><a href="#">Careers</a></li>
+                <li class="footer-item">
+                  <a href="#">Blog</a>
+                </li>
+                <li class="footer-item"><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- loader -->
+      <!-- <div class="loader-container">
+        <img src="/assets/images/loader.gif" alt="" />
+      </div> -->
+      <!-- loader end -->
+    </div>
+  </body>
+</html>

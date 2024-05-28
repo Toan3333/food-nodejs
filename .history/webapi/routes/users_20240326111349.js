@@ -1,0 +1,27 @@
+var express = require("express");
+var router = express.Router();
+const userController = require("../mongo/users.controller");
+// http://localhost:3000/users
+
+router.get("/", async (req, res) => {
+  try {
+    const users = await userController.getAllUser();
+    return res.status(200).json({ Users: users });
+  } catch (error) {
+    console.log("Loi");
+    return res.status(500).json({ mess: error });
+  }
+});
+
+// thêm user mới
+router.post("/", async (req, res) => {
+  try {
+    const body = req.body;
+    const result = await userController.insertUser(body);
+    return res.status(200).json({ NewUser: result });
+  } catch (error) {
+    console.log("Loi them san pham moi", error);
+    res.status(500).json({ mess: "loi" });
+  }
+});
+module.exports = router;

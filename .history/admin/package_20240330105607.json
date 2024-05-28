@@ -1,0 +1,17 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "admin.js",
+  "scripts": {
+    "dev": "parcel ./*.html --no-cache",
+    "devw": "parcel watch ./*.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "buffer": "^6.0.3"
+  }
+}
