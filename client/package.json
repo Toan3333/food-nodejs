@@ -2,14 +2,10 @@
   "name": "client",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "dev": "parcel ./*.html --no-cache",
-    "devw": "parcel watch ./*.html"
-  },
-  "staticFiles": {
-    "staticPath": "public",
-    "watcherGlob": "**"
+    "dev": "parcel index.html",
+    "deploy": "npm run build && gh-pages --dist dist",
+    "build": "parcel build index.html --no-cache"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +15,7 @@
     "buffer": "^6.0.3"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "parcel": "^2.12.0",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-static-files-copy": "^2.6.0"
