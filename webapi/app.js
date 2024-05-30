@@ -31,7 +31,9 @@ app.use(cors()); // cho phép các domain khác gọi tới api này
 
 // kết nối dbMongo
 mongoose
-  .connect("mongodb://localhost:27017/wd18306")
+  .connect(
+    "mongodb+srv://root:123@cluster0.8vxdhnw.mongodb.net/wd18306?retryWrites=true&w=majority"
+  )
   .then(() => console.log("Kết nối thành công"))
   .catch((err) => console.log("Thất bại", err));
 

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "parcel index.html",
+    "dev": "parcel index.html --no-cache",
     "deploy": "npm run build && gh-pages --dist dist",
     "build": "parcel build index.html --no-cache"
   },
